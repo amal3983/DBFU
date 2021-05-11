@@ -13,6 +13,12 @@ $theme-colors: (
 				"dark": #666666
 );
 
+.btn {
+	font-family: 'Roboto Condensed', sans-serif !important;
+	font-weight: bold;
+	border-radius: 0 !important;
+}
+
 /* Her retter vi margin og padding (p-1, p-2, pb-1.... og m-1, m-2, mt-1 osv) */
 $spacer: 15px;
 /* 15px svarer til 1rem, som er bootstraps standard */

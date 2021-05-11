@@ -17,6 +17,13 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0; /* Ingen ydre margen fra overskrifter */
 	padding: 0; /* Ingen indre margen fra overskrifter */
 	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h1 {
+	color:#D85349;
+	font-size:60px
 }
 
 ul, ol {
@@ -49,6 +56,20 @@ img {
 	transition: all 0.3s ease;
 }
 
+.on-light-bg-border {
+	margin-top: 5px;
+	width: 150px;
+	border-top: 10px solid rgba(102,102,102,0.20);
+	border-right: 10px solid white;
+}
+
+.on-dark-bg-border {
+	margin-top: 5px;
+	width: 150px;
+	border-top: 10px solid rgba(255, 255, 255, 0.25);
+	border-right: 10px solid white;
+}
+
 
 /* NAV */
 .top {
@@ -75,4 +96,15 @@ img {
 	background: rgba(102,102,102,0.50);
 	width: 2px;
 	margin: 0 15px;
+}
+
+/* HEADER */
+
+header {
+	background-image: none;
+	height: auto;
+}
+
+.PC-only {
+	display: none;
 }
