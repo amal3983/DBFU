@@ -1,16 +1,22 @@
 * { /* Gælder alt på hele siden */
 	box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 /* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
 
 body {
 	margin: 0; /* Ingen kanter i siden af browser */
+	font-size: 14px;
+}
+
+.condensed {
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0; /* Ingen ydre margen fra overskrifter */
 	padding: 0; /* Ingen indre margen fra overskrifter */
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 ul, ol {
@@ -41,4 +47,32 @@ img {
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+}
+
+
+/* NAV */
+.top {
+	margin: 20px 0;
+	font-size: 16px;
+
+}
+
+.link-for-medlemmer {
+	color: rgba(102,102,102,0.50) !important;
+}
+.link-for-medlemmer:hover {
+	color: #666666 !important;
+	text-decoration: none !important;
+}
+
+
+.logo-size {
+	height:40px !important;
+}
+
+.v-line {
+	padding: 2px;
+	background: rgba(102,102,102,0.50);
+	width: 2px;
+	margin: 0 15px;
 }
