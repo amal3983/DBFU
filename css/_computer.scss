@@ -1,27 +1,13 @@
 /* Her har vi styles til vores computer version */
 /* ------------------------------------------------------------- */
 
-$computer: "screen and (min-width: 1200px)";
+$computer: "screen and (min-width: 1000px)";
 @media #{$computer} {
-  header {
-    background-image: url("../img/bg_udskaaret_bil.png");
-    background-size: contain;
-    background-position: left;
+  .header-img {
+    background-image: url("../img/bg_med_udskaaret_bil.png");
+    background-position: right;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 670px !important;
-  }
-  .mobil-only {
-    display: none;
-  }
-
-  .PC-only {
-    display: block;
-  }
-
-  .bil-header {
-    width: 50%;
-    left: 0;
-    bottom: 0;
-
+    height: 750px !important;
   }
 }
