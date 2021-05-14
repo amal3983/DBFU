@@ -3,15 +3,17 @@
 
 $computer: "screen and (min-width: 1000px)";
 @media #{$computer} {
-  .header-img {
-    background-image: url("../img/bg_med_udskaaret_bil.png");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 750px !important;
+
+  h1 {
+    font-size:60px;
   }
+
 
   .border-top-nav {
     border-top:0;
+  }
+
+  .header-img {
+    height: 750px !important;
   }
 }
