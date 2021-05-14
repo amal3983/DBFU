@@ -158,6 +158,25 @@ header {
 }
 
 
+.side-nav-active {
+	padding: 5px 10px;
+	font-weight: 500;
+}
+
+.side-nav {
+	font-weight: 500;
+
+	&:hover {
+		opacity: 0.6 !important;
+		cursor: pointer;
+	}
+}
+
+
+
+
+
+
 
 /* NANNA */
 
