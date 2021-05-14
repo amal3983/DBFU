@@ -81,10 +81,11 @@ img {
 
 .link-for-medlemmer {
 	color: rgba(102,102,102,0.50) !important;
-}
-.link-for-medlemmer:hover {
-	color: #666666 !important;
-	text-decoration: none !important;
+
+	&:hover {
+		color: #666666 !important;
+		text-decoration: none !important;
+	}
 }
 
 
