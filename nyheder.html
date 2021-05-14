@@ -1,0 +1,209 @@
+<!-- 
+
+TIPS
+
+---- BOOTSTRAP ----
+
+- Aldrig giv "row" en baggrundsfarve, lav en div udenom row.
+
+- Aldrig giv "col-x" en baggrundsfarve, lav en ny div indeni col.
+
+
+HUSK
+
+CTRL + ALT + L
+Sætter kode op pænt automatisk!
+ 
+-->
+
+
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- Font Awesome link -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!-- PRIVATE | MEDLEMMER -->
+<div class="top text-center">
+    <a href="#" class="text-primary text-decoration-none transition condensed font-weight-bold">FOR PRIVATE</a> <span
+        class="v-line"></span> <a
+        href="#" class="link-for-medlemmer condensed transition font-weight-bold">FOR MEDLEMMER</a>
+
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white text-dark border-light border-top border-bottom">
+    <div class="container">
+        <a class="navbar-brand mr-5" href="#"><img class="logo-size" src="img/dbfu-logo.png" alt="DBFU Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-0 pt-3 pt-lg-0">
+                <li class="nav-item mr-2">
+                    <a class="nav-link active" href="#">Nyheder</a>
+                </li>
+                <li class="nav-item dropdown mr-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vi tilbyder
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item py-3" href="#">Brugtbilsgarantifond</a>
+                        <a class="dropdown-item py-3" href="#">Kilometergaranti</a>
+                        <a class="dropdown-item py-3" href="#">Reklamationsret</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown mr-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Godt at vide
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item py-3" href="#">For forbrugerne</a>
+                        <a class="dropdown-item py-3" href="#">Gode råd for købere</a>
+                        <a class="dropdown-item py-3" href="#">DBFU Mener</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#">Forhandlere</a>
+                </li>
+                <li class="nav-item pb-2 pb-lg-0">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav border-top-nav pt-2 pt-lg-0 ml-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Søg &nbsp; <i class="fas fa-lg fa-search"></i></a>
+                </li>
+                <li class="v-line mr-3 ml-2"></li>
+                <li>
+                    <a class="btn btn-primary nav-btn" href="#" role="button">Bliv medlem</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR SLUT -->
+
+
+<!-- BREADCRUMB -->
+<div class="bg-secondary text-white text-center breadcrumb-nav py-3">
+    <a class="breadcrumb-inactive link-white transition" href="index.html"><i class="fas fa-home fa-lg mr-3"></i></a>
+    <i class="fas fa-chevron-right breadcrumb-inactive fa-sm mr-3"></i>
+    <span class="font-weight-bold">NYHEDER</span>
+    </div>
+
+<header class="nyhedsside_bg p-5">
+
+    <div class="skraa_bg text-center p-5">
+
+        <h1>NYHEDER</h1>
+
+    </div>
+
+</header>
+
+<!-- NYHED 1 -->
+<section class="bg-light py-5">
+
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-12 col-md-6 align-self-center">
+                <h2 class="text-primary mb-2">Dansk Bilforhandler Union og Clever i nyt samarbejde</h2>
+                <p class="font-weight-bold mb-4">Dansk Bilforhandler Union (DBFU) og Clever har indgået et samarbejde, der skal gøre det nemmere for brugtbilkøberne i Danmark at køre på el.</p>
+
+                <a class="btn btn-secondary" href="#" role="button">LÆS MERE</a>
+
+            </div>
+
+            <div class="col-12 col-md-6">
+                <img src="img/nyhedsside/1.png" alt="Nyhedsbillede 1">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- NYHED 2 -->
+<section class="py-5">
+
+    <div class="container py-3">
+        <div class="row">
+
+            <div class="col-12 col-md-6">
+                <img src="img/nyhedsside/2.png" alt="Nyhedsbillede 2">
+
+            </div>
+
+            <div class="col-12 col-md-6 align-self-center">
+                <h2 class="text-primary mb-2">Dansk Bilforhandler Union og Clever i nyt samarbejde</h2>
+                <p class="font-weight-bold mb-4">Dansk Bilforhandler Union (DBFU) og Clever har indgået et samarbejde, der skal gøre det nemmere for brugtbilkøberne i Danmark at køre på el.</p>
+
+                <a class="btn btn-secondary" href="#" role="button">LÆS MERE</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+
+    });
+</script>
+
+</body>
+</html>
