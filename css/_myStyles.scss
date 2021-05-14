@@ -70,6 +70,7 @@ img {
 	border-right: 10px solid white;
 }
 
+ /* AMALIE */
 
 /* NAV */
 .top {
@@ -117,6 +118,45 @@ header {
 .PC-only {
 	display: none;
 }
+
+/* UNDERSIDER */
+
+.breadcrumb-nav {
+	font-size:14px;
+
+	span {
+		letter-spacing: 1px;
+	}
+}
+
+.breadcrumb-inactive {
+	opacity: 0.5;
+	color: white;
+}
+
+.link-white:hover {
+	color: white;
+	opacity: 1;
+}
+
+.skraa_bg {
+	background-image: url("../img/skraa_bg.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 100px 0;
+
+
+}
+
+/* NYHEDER */
+
+.nyhedsside_bg {
+	background-image: url("../img/nyhedsside/nyhedsside_bg.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+
 
 
 /* NANNA */
