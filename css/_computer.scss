@@ -2,6 +2,7 @@
 /* ------------------------------------------------------------- */
 
 $computer: "screen and (min-width: 1000px)";
+$xlcomputer: "screen and (min-width: 1921px)";
 @media #{$computer} {
 
   h1 {
@@ -16,5 +17,16 @@ $computer: "screen and (min-width: 1000px)";
   .header-img {
     height: 750px !important;
   }
+
+}
+
+
+@media #{$xlcomputer} {
+
+  .xlPC {
+    max-width: 1920px;
+    margin: auto;
+  }
+
 
 }
