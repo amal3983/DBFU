@@ -156,6 +156,18 @@ header {
 	background-color: rgba(255,255,255,0.7);
 }
 
+.skraa_right_top {
+	clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+	padding-right: 20px;
+
+}
+
+.skraa_right_bund {
+	clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 0% 100%);
+	padding-right: 20px;
+
+}
+
 /* NYHEDER */
 
 .nyhedsside_bg {
@@ -179,8 +191,19 @@ header {
 	}
 }
 
+/* BRUGTBILGARANTI */
 
+.betingelser-width {
+	width: 90%;
+}
 
+.w_garanti_number {
+	width: 15% !important;
+}
+
+.w_garanti_text {
+	width: 85% !important;
+}
 
 
 
