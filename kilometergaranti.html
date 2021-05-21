@@ -1,0 +1,362 @@
+<!-- 
+
+TIPS
+
+---- BOOTSTRAP ----
+
+- Aldrig giv "row" en baggrundsfarve, lav en div udenom row.
+
+- Aldrig giv "col-x" en baggrundsfarve, lav en ny div indeni col.
+
+
+HUSK
+
+CTRL + ALT + L
+Sætter kode op pænt automatisk!
+ 
+-->
+
+
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- Font Awesome link -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!-- PRIVATE | MEDLEMMER -->
+<div class="top text-center">
+    <a href="#" class="text-primary text-decoration-none transition condensed font-weight-bold">FOR PRIVATE</a> <span
+        class="v-line"></span> <a
+        href="#" class="link-for-medlemmer condensed transition font-weight-bold">FOR MEDLEMMER</a>
+
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white text-dark border-light border-top border-bottom">
+    <div class="container">
+        <a class="navbar-brand mr-5" href="index.html"><img class="logo-size" src="img/dbfu-logo.png" alt="DBFU Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-0 pt-3 pt-lg-0">
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="nyheder.html">Nyheder</a>
+                </li>
+                <li class="nav-item dropdown mr-2">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vi tilbyder
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item py-3" href="brugtbilgaranti.html">Brugtbilsgarantifond</a>
+                        <a class="dropdown-item py-3 text-primary" href="kilometergaranti.html">Kilometergaranti</a>
+                        <a class="dropdown-item py-3" href="reklamationsret.html">Reklamationsret</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown mr-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_2" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Godt at vide
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item py-3" href="#">Gode råd for købere</a>
+                        <a class="dropdown-item py-3" href="#">DBFU Mener</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#">Forhandlere</a>
+                </li>
+                <li class="nav-item pb-2 pb-lg-0">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav border-top-nav pt-2 pt-lg-0 ml-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Søg &nbsp; <i class="fas fa-lg fa-search"></i></a>
+                </li>
+                <li class="v-line mr-3 ml-2"></li>
+                <li>
+                    <a class="btn btn-primary nav-btn" href="#" role="button">Bliv medlem</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR SLUT -->
+
+
+<!-- BREADCRUMB -->
+<div class="bg-secondary text-white text-center breadcrumb-nav py-3">
+    <a class="breadcrumb-inactive link-white transition" href="index.html"><i class="fas fa-home fa-lg mr-3"></i></a>
+    <i class="fas fa-chevron-right breadcrumb-inactive fa-sm mr-3"></i>
+    <span class="font-weight-bold breadcrumb-inactive mr-3">VI TILBYDER</span>
+    <i class="fas fa-chevron-right breadcrumb-inactive fa-sm mr-3"></i>
+    <span class="font-weight-bold">KILOMETERGARANTI</span>
+</div>
+
+
+<!-- HEADER -->
+<header class="brugtbilgaranti_bg p-5">
+
+    <div class="skraa width-pc text-center p-5">
+
+        <h1>KILOMETER&shy;GARANTI</h1>
+
+    </div>
+
+</header>
+
+<!-- HVAD ER BRUGTBILGARANTIFOND -->
+<section class="bg-light py-5 px-3 px-md-0">
+
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
+                <img src="img/brugtbilgaranti/hvad_er_brugtbilgaranti.png" alt="Billede for brugtbilgarantifond">
+            </div>
+
+
+            <div class="col-12 col-md-6 align-self-center">
+                <h2 class="h1 text-primary">HVAD ER EN KILOMETER&shy;GARANTI?</h2>
+                <div class="on-light-bg-border mb-4"></div>
+
+                <p class="mb-4">
+                    Kilometertælleren fortæller dig, hvor meget en brugt bil har kørt. Det er således en indikator for
+                    bilens brug, hvilket du bør være opmærksom på, inden du køber din næste brugte bil.
+                    <br><br>
+                    Når du køber en bil hos en forhandler, som er medlem af DBFU, kan du trygt stole på, at
+                    kilometertælleren ikke er manipuleret på de biler hvor der lovesen kilometergaranti, hvilket er din
+                    sikkerhed for at kilometertælleren fortæller sandheden. Således er du sikret en troværdig handel og
+                    et godt køb, når du køber en brugt bil hos et medlem af DBFU.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="py-5 px-3 px-md-0">
+
+    <div class="container py-3">
+        <div class="row">
+
+            <div class="col-12 col-md-6 align-self-center order-2 order-md-1">
+                <h2 class="h1 text-primary">ER KILOMETER&shy;TÆLLEREN MANIPULERET?</h2>
+                <div class="on-white-bg-border mb-4"></div>
+
+                <p class="mb-4">
+                    Hvis du finder ud af, at kilometertælleren alligevel er manipuleret, så er du stadig i trygge
+                    hænder. Takket være kilometergarantien behøver du ikke indlede opslidende retssager og skriverier,
+                    men kan vælge en af følgende løsninger:
+                    <br><br>
+
+
+                <div class="row">
+                <div class="col-3 col-md-2 mr-0 pr-1 pt-1">
+                    <div class="bg-secondary text-center w-100 px-3 py-3 text-white">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                    <div class="col">
+                        Bilen tages retur til fuld pris inden for de første 3 måneder fra købsdatoen uden fradrag for op
+                        til
+                        5000 kørte km. Hvis bilen har kørt mere end 5000 km fradrages tilbagekøbsprisen efter den til
+                        enhver
+                        tid gældende sats.
+                    </div>
+                </div>
+                <br><br>
+
+                <div class="row">
+                    <div class="col-3 col-md-2 mr-0 pr-1 pt-1">
+                        <div class="bg-secondary text-center w-100 px-3 py-3 text-white">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        Hvis bilen er finansieret via forhandleren, betaler forhandleren for samtlige omkostninger, som
+                        køber har haft i forbindelse med at etablere lånet. Køber er således stillet på samme måde, som
+                        inden aftalen blev indgået.
+                    </div>
+                </div>
+                <br><br>
+
+                <div class="row">
+                    <div class="col-3 col-md-2 mr-0 pr-1 pt-1">
+                        <div class="bg-secondary text-center w-100 px-3 py-3 text-white">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        Opdages en evt. manipulation af kilometertælleren efter 3 måneder, men inden 12 måneder fra
+                        købsdatoen, tages bilen retur med fradrag for kørte kilometer efter den til enhver tid gældende
+                        sats. Efter 12 måneder fra købsdatoen behandles sagen i overensstemmelse med købeloven.
+                    </div>
+                </div>
+                <br><br>
+
+                <div class="row">
+                    <div class="col-3 col-md-2 mr-0 pr-1 pt-1">
+                        <div class="bg-secondary text-center w-100 px-3 py-3 text-white">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        Køber kan også til enhver tid vælge en kompensation svarende til forskellen mellem den pris,
+                        køber har givet, og den værdi bilen ville have haft ved salg med det korrekte kilometertal.
+                        Kompensationen fastsættes af DBFU ved hjælp af gennemsnitspriser på tilsvarende annoncerede
+                        biler.
+                    </div>
+                </div>
+
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-5 mb-md-0">
+                <img src="img/kilometergaranti/kilometertaeller.png" alt="Nyhedsbillede 1">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="bg-light py-5 px-3 px-md-0">
+
+    <div class="container py-3">
+        <div class="row">
+
+            <div class="col-12 col-md-6 align-self-center order-2 order-md-1">
+                <h2 class="h1 text-primary">ER KILOMETER&shy;TÆLLEREN MANIPULERET?</h2>
+                <div class="on-white-bg-border mb-4"></div>
+
+                <p class="mb-4">
+                    Hvis du finder ud af, at kilometertælleren alligevel er manipuleret, så er du stadig i trygge
+                    hænder. Takket være kilometergarantien behøver du ikke indlede opslidende retssager og skriverier,
+                    men kan vælge en af følgende løsninger:
+                    <br><br>
+
+
+                <div class="row">
+                <div class="col-3 col-md-2 mr-0 pr-1 pt-1">
+                    <div class="bg-secondary text-center w-100 px-3 py-3 text-white">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                    <div class="col">
+                        Bilen tages retur til fuld pris inden for de første 3 måneder fra købsdatoen uden fradrag for op
+                        til
+                        5000 kørte km. Hvis bilen har kørt mere end 5000 km fradrages tilbagekøbsprisen efter den til
+                        enhver
+                        tid gældende sats.
+                    </div>
+                </div>
+                <br><br>
+
+                <div class="row">
+                    <div class="col-3 col-md-2 mr-0 pr-1 pt-1">
+                        <div class="bg-secondary text-center w-100 px-3 py-3 text-white">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        Hvis bilen er finansieret via forhandleren, betaler forhandleren for samtlige omkostninger, som
+                        køber har haft i forbindelse med at etablere lånet. Køber er således stillet på samme måde, som
+                        inden aftalen blev indgået.
+                    </div>
+                </div>
+                <br><br>
+
+                <div class="row">
+                    <div class="col-3 col-md-2 mr-0 pr-1 pt-1">
+                        <div class="bg-secondary text-center w-100 px-3 py-3 text-white">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        Opdages en evt. manipulation af kilometertælleren efter 3 måneder, men inden 12 måneder fra
+                        købsdatoen, tages bilen retur med fradrag for kørte kilometer efter den til enhver tid gældende
+                        sats. Efter 12 måneder fra købsdatoen behandles sagen i overensstemmelse med købeloven.
+                    </div>
+                </div>
+                <br><br>
+
+                <div class="row">
+                    <div class="col-3 col-md-2 mr-0 pr-1 pt-1">
+                        <div class="bg-secondary text-center w-100 px-3 py-3 text-white">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        Køber kan også til enhver tid vælge en kompensation svarende til forskellen mellem den pris,
+                        køber har givet, og den værdi bilen ville have haft ved salg med det korrekte kilometertal.
+                        Kompensationen fastsættes af DBFU ved hjælp af gennemsnitspriser på tilsvarende annoncerede
+                        biler.
+                    </div>
+                </div>
+
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-5 mb-md-0">
+                <img src="img/brugtbilgaranti/ekstra_garanti.png" alt="Nyhedsbillede 1">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+
+    });
+</script>
+
+</body>
+</html>
