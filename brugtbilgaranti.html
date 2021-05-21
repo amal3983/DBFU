@@ -1,0 +1,311 @@
+<!-- 
+
+TIPS
+
+---- BOOTSTRAP ----
+
+- Aldrig giv "row" en baggrundsfarve, lav en div udenom row.
+
+- Aldrig giv "col-x" en baggrundsfarve, lav en ny div indeni col.
+
+
+HUSK
+
+CTRL + ALT + L
+Sætter kode op pænt automatisk!
+ 
+-->
+
+
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- Font Awesome link -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!-- PRIVATE | MEDLEMMER -->
+<div class="top text-center">
+    <a href="#" class="text-primary text-decoration-none transition condensed font-weight-bold">FOR PRIVATE</a> <span
+        class="v-line"></span> <a
+        href="#" class="link-for-medlemmer condensed transition font-weight-bold">FOR MEDLEMMER</a>
+
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white text-dark border-light border-top border-bottom">
+    <div class="container">
+        <a class="navbar-brand mr-5" href="index.html"><img class="logo-size" src="img/dbfu-logo.png" alt="DBFU Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-0 pt-3 pt-lg-0">
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="nyheder.html">Nyheder</a>
+                </li>
+                <li class="nav-item dropdown mr-2">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vi tilbyder
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item py-3 text-primary" href="brugtbilgaranti.html">Brugtbilsgarantifond</a>
+                        <a class="dropdown-item py-3" href="kilometergaranti.html">Kilometergaranti</a>
+                        <a class="dropdown-item py-3" href="reklamationsret.html">Reklamationsret</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown mr-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_2" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Godt at vide
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item py-3" href="#">Gode råd for købere</a>
+                        <a class="dropdown-item py-3" href="#">DBFU Mener</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#">Forhandlere</a>
+                </li>
+                <li class="nav-item pb-2 pb-lg-0">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav border-top-nav pt-2 pt-lg-0 ml-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Søg &nbsp; <i class="fas fa-lg fa-search"></i></a>
+                </li>
+                <li class="v-line mr-3 ml-2"></li>
+                <li>
+                    <a class="btn btn-primary nav-btn" href="#" role="button">Bliv medlem</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR SLUT -->
+
+
+<!-- BREADCRUMB -->
+<div class="bg-secondary text-white text-center breadcrumb-nav py-3">
+    <a class="breadcrumb-inactive link-white transition" href="index.html"><i class="fas fa-home fa-lg mr-3"></i></a>
+    <i class="fas fa-chevron-right breadcrumb-inactive fa-sm mr-3"></i>
+    <span class="font-weight-bold breadcrumb-inactive mr-3">VI TILBYDER</span>
+    <i class="fas fa-chevron-right breadcrumb-inactive fa-sm mr-3"></i>
+    <span class="font-weight-bold">BRUGTBILGARANTIFOND</span>
+</div>
+
+
+<!-- HEADER -->
+<header class="brugtbilgaranti_bg p-5">
+
+    <div class="skraa width-pc text-center p-5">
+
+        <h1>BRUGTBIL- <br> GARANTIFOND</h1>
+
+    </div>
+
+</header>
+
+<!-- HVAD ER BRUGTBILGARANTIFOND -->
+<section class="bg-light py-5 px-3 px-md-0">
+
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
+                <img src="img/brugtbilgaranti/hvad_er_brugtbilgaranti.png" alt="Billede for brugtbilgarantifond">
+            </div>
+
+
+            <div class="col-12 col-md-6 align-self-center">
+                <h2 class="h1 text-primary">HVAD ER EN BRUGTBILGARANTIFOND?</h2>
+                <div class="on-light-bg-border mb-4"></div>
+
+                <h3 class="text-secondary mb-2">EN SIKKER BILHANDEL</h3>
+                <p class="mb-4">
+                    Alle brugtvognsforhandlere, der er medlem af DBFU, har tilsluttet sig og bidrager alle til
+                    BrugtBilGarantiFonden. Det betyder, at du som forbruger får helt særlige garantier, når du køber bil
+                    hos et af vores medlemmer.
+                    <br><br>
+                    Garantifonden sikrer dig mod reklamationer, skjult restgæld og manipulerede kilometertællere, når du
+                    køber brugte biler gennem vores forhandlere. I disse tilfælde er du garanteret en erstatning. Hvis
+                    forhandleren ikke kan dække erstatningskravet, udbetaler fonden erstatninger til dig, såfremt der
+                    foreligger en endelig afgørelse i form af en dom eller retskendelse. Du undgår således at tabe
+                    penge, hvis du køber en brugt bil med reklamationer, restgæld eller en manipuleret kilometertæller.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5 px-3 px-md-0">
+
+    <div class="container py-3">
+        <div class="row">
+
+            <div class="col-12 col-md-6 align-self-center order-2 order-md-1">
+                <h2 class="h1 text-primary">NOGLE FORHANDLERE TILBYDER EKSTRA GARANTI</h2>
+                <div class="on-white-bg-border mb-4"></div>
+
+                <p class="mb-4">
+                    Mange af DBFUs medlemmer tilbyder en ekstra brugtbilsgaranti, der går ud over den 24 måneders
+                    reklamationsret, som du i forvejen har ret til ifølge købeloven.
+                    <br><br>
+                    Denne ekstra garanti er dog individuel for forhandlerne og afhængig af bilens årgang, alder og
+                    stand. Garantien kan gå lige fra 30 dage til 180 dage, og som regel kun for drivlinjen såsom motor,
+                    gearkasse, generator og lignende.
+                    <br><br>
+                    Brugtbilsgarantien er en ydelse, som gives individuelt for det enkelte køretøj af den enkelte
+                    forhandler. Garantien dækker i den aftalte periode i forhold den anførte procentsats.
+
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-5 mb-md-0">
+                <img src="img/brugtbilgaranti/ekstra_garanti.png" alt="Nyhedsbillede 1">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="garantibetingelser_bg mt-5 py-5">
+
+    <div class="container py-5">
+        <div class="text-center">
+            <h2 class="h1 text-primary">GARANTIBETINGELSER</h2>
+            <div class="on-white-bg-border mb-4 mx-auto"></div>
+        </div>
+
+
+        <section>
+            <div class="mt-5">
+                <div class="betingelser-width mx-auto">
+                    <div class="">
+
+
+                        <!-- NUMMER 1 -->
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="h1 text-light bg-secondary py-4 w_garanti_number text-center m-0">1</div>
+
+                            <div class="bg-white py-3 skraa_right_top w_garanti_text px-3">
+                                Garantien bliver vurderet i forhold til tilsvarende køretøjers alder og stand, hvor
+                                der accepteres en vis slitage på bilen.
+                            </div>
+                        </div>
+
+
+                        <!-- NUMMER 2 -->
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="h1 text-light bg-secondary py-4 w_garanti_number text-center m-0">2</div>
+
+                            <div class="bg-white py-3 skraa_right_bund w_garanti_text px-3">
+                                Garantien forudsætter, at køretøjet udelukkende anvendes til normal privat eller
+                                erhvervsmæssig brug, og at der ikke efterfølgende monteres eller justeres på
+                                effektforøgende
+                                udstyr/komponenter.
+                            </div>
+                        </div>
+
+                        <!-- NUMMER 3 -->
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="h1 text-light bg-secondary py-4 w_garanti_number text-center m-0">3</div>
+
+                            <div class="bg-white py-3 skraa_right_top w_garanti_text px-3">
+                                Garantireparationer skal udføres hos sælger, eller én af ham anvist reparatør.
+                            </div>
+                        </div>
+
+                        <!-- NUMMER 4 -->
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="h1 text-light bg-secondary py-4 w_garanti_number text-center m-0">4</div>
+
+                            <div class="bg-white py-3 skraa_right_bund w_garanti_text px-3">
+                                Garantien dækker ikke transportomkostninger i forbindelse med havari.
+                            </div>
+                        </div>
+
+                        <!-- NUMMER 5 -->
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="h1 text-light bg-secondary py-4 w_garanti_number text-center m-0">5</div>
+
+                            <div class="bg-white py-3 skraa_right_top w_garanti_text px-3">
+                                Ved køb af brugte biler med resterende fabriksgaranti, gælder denne sideløbende med
+                                ovennævnte garanti.
+                            </div>
+                        </div>
+
+                        <!-- NUMMER 6 -->
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="h1 text-light bg-secondary py-4 w_garanti_number text-center m-0">6</div>
+
+                            <div class="bg-white py-3 skraa_right_bund w_garanti_text px-3">
+                                Garantien ophører ved ejerskifte.
+                            </div>
+                        </div>
+
+                        <!-- NUMMER 7 -->
+                        <div class="d-flex align-items-center">
+                            <div class="h1 text-light bg-secondary py-4 w_garanti_number text-center m-0">7</div>
+
+                            <div class="bg-white py-3 skraa_right_top w_garanti_text px-3">
+                                Der er en selvrisiko på kr. 500,- ved enhver hændelse.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+
+    });
+</script>
+
+</body>
+</html>

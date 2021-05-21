@@ -7,6 +7,7 @@
 body {
 	margin: 0; /* Ingen kanter i siden af browser */
 	font-size: 14px;
+	color: #666666;
 }
 
 .condensed {
@@ -39,6 +40,7 @@ li {
 p {
 	margin: 0; /* Ingen ydre margen fra paragraffer */
 	padding: 0; /* Ingen indre margen fra paragraffer */
+	line-height: 23px;
 }
 
 /* Sikrer billeder er responsive */
@@ -56,11 +58,18 @@ img {
 	transition: all 0.3s ease;
 }
 
-.on-light-bg-border {
+.on-white-bg-border {
 	margin-top: 5px;
 	width: 150px;
 	border-top: 10px solid rgba(102,102,102,0.20);
 	border-right: 10px solid white;
+}
+
+.on-light-bg-border {
+	margin-top: 5px;
+	width: 150px;
+	border-top: 10px solid rgba(102,102,102,0.20);
+	border-right: 10px solid #f6f6f6;
 }
 
 .on-dark-bg-border {
@@ -140,13 +149,22 @@ header {
 	opacity: 1;
 }
 
-.skraa_bg {
-	background-image: url("../img/skraa_bg.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin: 100px 0;
 
+.skraa {
+	margin: 100px 0;
+	clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+	background-color: rgba(255,255,255,0.7);
+}
+
+.skraa_right_top {
+	clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+	padding-right: 20px;
+
+}
+
+.skraa_right_bund {
+	clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 0% 100%);
+	padding-right: 20px;
 
 }
 
@@ -173,8 +191,31 @@ header {
 	}
 }
 
+/* BRUGTBILGARANTI */
 
+.betingelser-width {
+	width: 90%;
+}
 
+.w_garanti_number {
+	width: 15% !important;
+}
+
+.w_garanti_text {
+	width: 85% !important;
+}
+
+.garantibetingelser_bg {
+	background-image: url("../img/brugtbilgaranti/garantibetingelser.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.brugtbilgaranti_bg {
+	background-image: url("../img/brugtbilgaranti/brugtbilgaranti-header.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
 
 
