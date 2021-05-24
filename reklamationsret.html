@@ -1,0 +1,269 @@
+<!-- 
+
+TIPS
+
+---- BOOTSTRAP ----
+
+- Aldrig giv "row" en baggrundsfarve, lav en div udenom row.
+
+- Aldrig giv "col-x" en baggrundsfarve, lav en ny div indeni col.
+
+
+HUSK
+
+CTRL + ALT + L
+Sætter kode op pænt automatisk!
+ 
+-->
+
+
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- Font Awesome link -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!-- PRIVATE | MEDLEMMER -->
+<div class="top text-center">
+    <a href="#" class="text-primary text-decoration-none transition condensed font-weight-bold">FOR PRIVATE</a> <span
+        class="v-line"></span> <a
+        href="#" class="link-for-medlemmer condensed transition font-weight-bold">FOR MEDLEMMER</a>
+
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white text-dark border-light border-top border-bottom">
+    <div class="container">
+        <a class="navbar-brand mr-5" href="index.html"><img class="logo-size" src="img/dbfu-logo.png" alt="DBFU Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-0 pt-3 pt-lg-0">
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="nyheder.html">Nyheder</a>
+                </li>
+                <li class="nav-item dropdown mr-2">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vi tilbyder
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item py-3" href="brugtbilgaranti.html">Brugtbilsgarantifond</a>
+                        <a class="dropdown-item py-3" href="kilometergaranti.html">Kilometergaranti</a>
+                        <a class="dropdown-item py-3 disabled text-primary"
+                           href="reklamationsret.html">Reklamationsret</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="gode_raad.html">Godt at vide</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="forhandlere.html">Forhandlere</a>
+                </li>
+                <li class="nav-item pb-2 pb-lg-0">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav border-top-nav pt-2 pt-lg-0 ml-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Søg &nbsp; <i class="fas fa-lg fa-search"></i></a>
+                </li>
+                <li class="v-line mr-3 ml-2"></li>
+                <li>
+                    <a class="btn btn-primary nav-btn" href="#" role="button">Bliv medlem</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR SLUT -->
+
+
+<!-- BREADCRUMB -->
+<div class="bg-secondary text-white text-center breadcrumb-nav py-3">
+    <a class="breadcrumb-inactive link-white transition" href="index.html"><i class="fas fa-home fa-lg mr-3"></i></a>
+    <i class="fas fa-chevron-right breadcrumb-inactive fa-sm mr-3"></i>
+    <span class="font-weight-bold breadcrumb-inactive mr-3">VI TILBYDER</span>
+    <i class="fas fa-chevron-right breadcrumb-inactive fa-sm mr-3"></i>
+    <span class="font-weight-bold">REKLAMATIONSRET</span>
+</div>
+
+
+<!-- HEADER -->
+<header class="kilometergaranti_bg p-5">
+
+    <div class="skraa width-pc text-center p-5">
+
+        <h1>REKLAMATIONS&shy;RET</h1>
+
+    </div>
+
+</header>
+
+<!-- HVAD ER BRUGTBILGARANTIFOND -->
+<section class="bg-light py-5 px-3 px-md-0">
+
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
+                <img src="img/kilometergaranti/hvad_er_kilometergaranti.png" alt="Billede for hvad er kilometergaranti">
+            </div>
+
+
+            <div class="col-12 col-md-6 align-self-center">
+                <h2 class="h1 text-primary">Din bil er dækket af reklamations&shy;ret</h2>
+                <div class="on-light-bg-border mb-4"></div>
+
+                <p class="mb-4">
+                    Din brugte bil er dækket af en to-årig reklamationsret, hvis du køber din bil hos en forhandler frem
+                    for en privatperson.
+                    <br><br>
+                    Du skal altid sørge for at finde en <a href="forhandlere.html">troværdig forhandler</a> og kigge
+                    grundigt på bilen, inden du skriver under på en købsaftale. Din reklamationsret tager nemlig
+                    udgangspunkt i bilens stand, da du købte den. Det er derfor vigtigt, at du sikrer dig, at
+                    brugtvognen ikke har skader, inden du køber den. En troværdig forhandler er en god måde at sikre
+                    dig en kvalitetsbil. De passer på bilerne og de er ærlige omkring bilens forhold.
+                </p>
+
+                <a class="btn btn-secondary caps" href="forhandlere.html" role="button">Find en troværdig forhandler</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class=" my-3 py-5 px-3 px-md-0">
+
+    <div class="container text-container">
+
+        <h2 class="h1 text-primary text-center">Hvad er forskel&shy;len mellem <br> reklamations&shy;ret og garanti?</h2>
+        <div class="on-white-bg-border mb-5 mx-auto"></div>
+
+
+        <div class="row mt-3">
+
+                    <div class="row mb-4">
+                                <div class="col-12 col-md-6 col-lg-5">
+                                <img src="img/reklamationsret/reklamationsret.png" class="pr-5 pb-5 pr-md-0 pb-md-0"
+                                     alt="Reklamationsret">
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-7">
+
+                                    <h3 class="text-secondary mb-3">Reklamationsret</h3>
+                                    <p class="mb-3">
+                                    Når du køber en brugt bil hos en forhandler, har du en reklamationsret i 24 mdr. Den
+                                    dækker fejl, der var til stede, da du fik leveret bilen. Med mindre at sælgeren har
+                                    oplyst om skaderne på slutsedlen, eller friholdt disse fejl fra reklamationsretten.
+                                    I så fald er du klar over bilens fejl, da du køber den.
+                                    </p>
+
+                                    <h5 class="text-secondary">De første 6 mdr.</h5>
+                                    <p class="mb-3">
+                                    De første seks måneder gælder formodningsreglen ved køb af brugte biler. Det
+                                    betyder, at der i sagen formodes, at bilen havde fejl, da du købte den. Forhandleren
+                                    skal derfor, i løbet af de første 6 mdr. efter leveringen, bevise at en fejl ikke
+                                    var til stede, hvis sælgeren ikke vil dække reklamationen.
+                                    </p>
+
+                                    <h5 class="text-secondary">De resterende 18 mdr.</h5>
+                                    <p class="mb-3">
+                                    Du skal bevise, at din bil havde en fejl for at reklamationsretten dækker bilens
+                                    skade, hvis du købte bilen for mere end seks måneder siden.
+                                    </p>
+                                    Reklamationsretten dækker således kun fejl og mangler, som var til stede, da du fik
+                                    leveret din brugte bil. Reklamationsretten er en del af forbrugerlovgivningen og den
+                                    gælder alle forhandlere.
+                                </div>
+
+                            </div>
+
+            <hr>
+
+
+            <div class="row mt-4">
+
+                <div class="col-12 col-md-6 col-lg-7 order-2 order-md-1">
+
+                    <h3 class="text-secondary mb-3">Garanti</h3>
+                    <p>
+                    Garanti kan udstedes af sælger og er altså en helt frivillig aftale mellem køber og sælger. Garanti kan variere i både dækningsområder, længde og dækningsprocent.
+                        <br><br>
+                    En typisk garanti udstedt på en nyere brugt bil kunne være: 3- 6 mdr. 100 % garanti på drivinien (motor, gearkasse, kardan- og drivaksler, differentiale, starter og generator, brændstofsystem samt kølesystem.
+                        <br><br>
+                    Garantien kan også være udformet så køber og sælger f.eks. deler omkostningerne ved en reparation, eller garantien kan være ledsaget af en forsikringspolice som dækker for mekanisk svigt.
+                        <br><br>
+                    Grundlæggende er det et spørgsmål om en aftale mellem køber og sælger og garantien skal stille køber bedre end købelovens bestemmelser.
+                        <br><br>
+                    Hvis du vil vide mere, så kan du <a href="kontakt.html">kontakte os</a> eller du kan gå ind på <a
+                            href="https://forbrug.dk/" target="_blank">Konkurrence- og Forbrugerstyrrelsens
+                        hjemmeside</a>
+                        og finde yderligere oplysninger.
+                    </>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 order-1 order-md-2">
+                    <img src="img/reklamationsret/garanti.png" class="pr-5 pb-5 pr-md-0 pb-md-0"
+                         alt="Reklamationsret">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+
+    });
+</script>
+
+</body>
+</html>
