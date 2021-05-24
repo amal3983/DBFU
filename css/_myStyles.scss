@@ -43,6 +43,10 @@ p {
 	line-height: 23px;
 }
 
+.caps {
+	text-transform: uppercase;
+}
+
 /* Sikrer billeder er responsive */
 img {
 	display: block; /* Billeder er et element (laver linjeskift) */
