@@ -334,3 +334,18 @@ input[type="search"] {
 button[type="submit"] {
 	flex: 1 0 90px;
 }
+
+
+
+
+
+.icon_top {
+  margin-right: -20px;
+  position: relative;
+  z-index: 10;
+}
+
+.white_box {
+  z-index: 1;
+  padding: 25px;
+}
