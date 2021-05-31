@@ -61,8 +61,8 @@ ul ol {
 	font-weight: bold;
 }
 
-.form-control {
-	border-radius: 0;
+.form-control, button {
+	border-radius: 0 !important;
 }
 
 /* BOOTSTRAP SLUT */
