@@ -156,7 +156,8 @@ Sætter kode op pænt automatisk!
                     Vi har på denne side lavet en liste over alle vores forhandlere, som er fordelt over hele landet.
                 Søg efter et postnummer eller en by og find ud af hvilken forhandler, der er nærmest dig</p>
 
-                <a class="text-uppercase btn btn-secondary px-4" href="#" role="button">Find en forhandler</a>
+                <a class="text-uppercase btn btn-secondary px-4" href="#" id="findforhandler" role="button">Find en
+                    forhandler</a>
 
             </div>
 
@@ -178,19 +179,20 @@ Sætter kode op pænt automatisk!
             <div class="on-light-bg-border mb-4 mx-auto"></div>
             <article class="form-search pb-md-4 pt-3 pt-md-5">
                 <form class="search-form">
-                    <input type="search" name="search" placeholder="Søg efter postnummer eller by"
-                           class="mr-sm-0 p-2 mr-md-2 search-input">
-
-                    <button type="submit" class="mt-2 mt-md-0 ml-md-2 search-btn">SØG</button>
+                    <input type="search" placeholder="Søg efter postnummer eller by" class="mr-sm-0 p-2 mr-md-2 search-input">
+                    <a class="text-uppercase btn btn-secondary px-4 pt-2 findforhandler" href="#findforhandler"
+                       id="findforhandler"
+                       role="button">SØG</a>
+                    <!--<button type="submit" class="mt-2 mt-md-0 ml-md-2 search-btn">SØG</button>-->
 
                 </form>
             </article>
 
-
+<div class="resultat">
             <hr class="mt-5">
             <!-- søgeresultat 1 -->
             <div class="search-results-box mt-5 mx-md-5 px-md-5">
-                <h3 class="caps text-primary">Strada autp aps.</h3>
+                <h3 class="text-uppercase text-primary">Strada autp aps.</h3>
                 <p>
                     <i class="pt-3 mr-2 text-secondary fas fa-map-marker-alt"></i> Trafikcenter Allé - 4200 Slagelse
                 </p>
@@ -241,10 +243,18 @@ Sætter kode op pænt automatisk!
             </div>
 
             <hr class="mt-4">
+</div>
 
+            <div class="noresult text-center font-weight-bold">
+                <hr class="mb-4 mt-5">
+                <i class="fas fa-exclamation-circle text-primary fa-lg"></i>
+                <p>Det ser ud til, at der ikke er nogle resultater. Prøv at søg efter et postnummer eller en by.</p>
+                <hr class="mt-4">
+            </div>
 
         </div>
     </div>
+
 </section>
 
 
@@ -315,6 +325,11 @@ Sætter kode op pænt automatisk!
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     $(function () {
+
+        $('.findforhandler').click(function () {
+            $('.resultat').slideDown(200);
+            $('.noresult').hide(0);
+        })
 
     });
 </script>
