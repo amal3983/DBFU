@@ -1,8 +1,11 @@
 /* Her har vi styles til vores computer version */
 /* ------------------------------------------------------------- */
 
+
 $computer: "screen and (min-width: 1000px)";
-$xlcomputer: "screen and (min-width: 1921px)";
+$xlcomputer: "screen and (min-width: 1800px)";
+
+
 @media #{$computer} {
 
   h1 {
@@ -24,10 +27,50 @@ $xlcomputer: "screen and (min-width: 1921px)";
     width: 900px;
   }
 
+
+  .forside-height {
+    height: 600px;
+  }
+
+
+  .bil {
+    height: 100%;
+    width: 1200px;
+    background-position: 40px bottom;
+    margin-left: -200px;
+  }
+
+  @keyframes bil {
+    0%   {
+      opacity:0;
+      background-position: 0 bottom;
+    }
+    50%  {
+
+      opacity:1;
+      background-position: 40px bottom;
+    }
+  }
+
+  .forside-bg {
+    background-image: url("../img/forside_bg.jpg");
+    background-position: left;
+  }
+
+
 }
 
 
 @media #{$xlcomputer} {
+  .xlwidth {
+    max-width: 1140px;
+  }
 
+  .bil {
+    height: 100%;
+    width: 1300px;
+    background-position: 50px bottom;
+    margin-left: -250px;
+  }
 
 }

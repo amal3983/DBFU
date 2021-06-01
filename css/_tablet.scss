@@ -41,4 +41,42 @@ $tablet: "screen and (min-width: 768px)";
   .forhandlere-img {
     padding-left:30px;
   }
+
+
+  .forside-height {
+    height: 500px;
+  }
+
+  .bil {
+    background-image: url("../img/kun-bil.png");
+    background-size: contain;
+    height: 100%;
+    width: 900px;
+    background-position: 40px bottom;
+    margin-left: -200px;
+
+    background-repeat: no-repeat;
+    animation-name: bil;
+    animation-duration: 4s;
+  }
+
+  @keyframes bil {
+    0%   {
+      opacity:0;
+      background-position: 0 bottom;
+    }
+    50%  {
+
+      opacity:1;
+      background-position: 40px bottom;
+    }
+  }
+
+  .forside-bg {
+    background-image: url("../img/forside_bg_tablet.jpg");
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    z-index: 5;
+  }
 }
