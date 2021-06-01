@@ -1,0 +1,237 @@
+<!-- 
+
+TIPS
+
+---- BOOTSTRAP ----
+
+- Aldrig giv "row" en baggrundsfarve, lav en div udenom row.
+
+- Aldrig giv "col-x" en baggrundsfarve, lav en ny div indeni col.
+
+
+HUSK
+
+CTRL + ALT + L
+Sætter kode op pænt automatisk!
+ 
+-->
+
+
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- Font Awesome link -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!-- PRIVATE | MEDLEMMER -->
+<div class="top text-center">
+    <a href="#" class="text-primary text-decoration-none transition condensed font-weight-bold">FOR PRIVATE</a> <span
+        class="v-line"></span> <a
+        href="#" class="link-for-medlemmer condensed transition font-weight-bold">FOR MEDLEMMER</a>
+
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white text-dark border-light border-top border-bottom">
+    <div class="container">
+        <a class="navbar-brand mr-5" href="index.html"><img class="logo-size" src="img/dbfu-logo.png" alt="DBFU Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-0 pt-3 pt-lg-0">
+                <li class="nav-item dropdown mr-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vi tilbyder
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item py-3" href="brugtbilsgaranti.html">Brugtbilgarantifond</a>
+                        <a class="dropdown-item py-3" href="kilometergaranti.html">Kilometergaranti</a>
+                        <a class="dropdown-item py-3" href="reklamationsret.html">Reklamationsret</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="brugtbilsguide.html">Brugtbilsguide</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link active" href="nyheder.html">Nyheder</a>
+                </li>
+                <li class="nav-item pb-2 pb-lg-0">
+                    <a class="nav-link" href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav border-top-nav pt-2 pt-lg-0 ml-0">
+                <li class="nav-item">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-field-menu"
+                               aria-label="Søg" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary nav-btn-soeg" type="button">Søg &nbsp; <i
+                                    class="fas fa-lg fa-search"></i></button>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="v-line mr-3 ml-2 d-none d-lg-block"></li>
+                <li class="mt-3 mt-lg-0">
+                    <a class="btn btn-primary nav-btn" href="forhandlere.html" role="button">Find en forhandler</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR SLUT -->
+
+
+<!-- BREADCRUMB -->
+<div class="bg-secondary text-white text-center breadcrumb-nav py-3">
+    <a class="breadcrumb-inactive link-white transition" href="index.html"><i class="fas fa-home fa-lg mr-3"></i></a>
+    <i class="fas fa-chevron-right breadcrumb-inactive fa-sm mr-3"></i>
+    <a class="breadcrumb-inactive link-white transition mr-3 text-uppercase text-decoration-none" href="nyheder.html">Nyheder</a>
+    <i class="fas fa-chevron-right breadcrumb-inactive dis fa-sm mr-3"></i>
+    <span class="font-weight-bold text-uppercase">Artikel</span>
+</div>
+
+<header class="bg-light p-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-5">
+                <h1 class="h1">BILBASEN GØR KLAR TIL DEN GRØNNE BØLGE</h1>
+                <div class="on-light-bg-border"></div>
+                <p class="font-weight-bold mt-4">Interessen for el- og plug-in-modeller er så massiv,
+                    at Bilbasen tilføjer nye funktioner for at vejlede bilkøberne.</p>
+            </div>
+
+            <div class="col-12 col-md-7">
+                <img src="img/nyhedsside/5.png" alt="Nyhedsbillede 5">
+
+            </div>
+
+
+        </div>
+    </div>
+</header>
+
+
+<div class="container width-pc pt-3">
+
+    <h3 class="mb-2 pt-5 text-primary">Interessen for elbiler er stor</h3>
+    <p class="mb-3">
+        Interessen for at køre biler med elmotor har aldrig været større. Det gælder også på brugtbilmarkedet. Det viser
+        en
+        søgeopgørelse som <a href="https://www.bilbasen.dk/" class="text-primary" target="_blank">Bilbasen</a> har
+        lavet. I øjeblikket søges el-biler omkring 10 gange mere end traditionelle benzin- og
+        dieselbiler, og nu gør Bilbasen det nemmere at finde frem til den elbil eller plug-in-hybrid, som man søger
+        efter.
+    </p>
+
+    <p class="mb-5">
+        ”Vi har tilføjet en række søgekriterier såsom batteristørrelse og rækkevidde på Bilbasen, faktisk på samme måde
+        som
+        man kan søge efter brændstofforbrug,” siger Jan Lang, markedsanalytiker hos Bilbasen. Han oplyser, at de mest
+        populære elbiler på <a href="https://www.bilbasen.dk/" class="text-primary" target="_blank">Bilbasen</a> såsom Tesla 3 og VW ID3 bliver søgt op imod 20 gange mere end gennemsnittet for
+        benzin-
+        og dieselsøgninger.
+    </p>
+
+    <h3 class="mb-2 text-primary">Udbuddet eksploderer</h3>
+
+    <p class="mb-3">
+        På tre måneder er udbuddet af brugte elbiler til salg over fordoblet, og nu er der godt 1.600 brugte elbiler til
+        salg på Bilbasen. I samme periode er antallet af plug-in-hybrider steget med 40%.
+    </p>
+
+    <p class="mb-5">
+        ”Forhandlerne importerer selv rigtig mange elbiler fra især Tyskland, men også Frankrig og Sverige for at kunne
+        følge med efterspørgslen, og dermed øges konkurrencen på markedet for brugte elbiler, og det er med til at holde
+        priserne nede selvom efterspørgslen er meget høj,” forklarer Jan Lang.
+    </p>
+
+    <h3 class="mb-2 text-primary">Stort antal af de mest populære modeller</h3>
+
+    <p class="mb-3">
+        Det er kun få måneder siden, at VW introducerede deres bud på en storsælgende elbil i form af VW ID3. Og
+        allerede nu
+        er der 90 brugte VW ID3-modeller til salg, men der er faktisk endnu flere af luksus-elbilen Audi e-tron med 115
+        brugte til salg. Det største udbud er dog Tesla 3, som der er 170 brugte til salg af lige nu.
+    </p>
+
+    <p class="mb-5">
+        ”Den store fordel for bilkøberne er, at de kan få leveret den efterspurgte elbil med det samme, og i ofte er der
+        stadig fabriksgaranti på bilen,” slutter Jan Lang.
+    </p>
+
+
+    <h3 class="mb-2 text-primary">Top 5 brugte ELBILER, som står til salg</h3>
+    <p class="mb-4">
+    <a href="https://www.bilbasen.dk/" class="text-primary" target="_blank">Bilbasen</a> gør sig klar til, at mange
+    danskere ønsker at købe brugte elbiler. Her har du en oversigt over de 5 mærker, som lige nu er til salg!
+    </p>
+    <p class="mb-3"><span class="bg-secondary text-white p-2 mr-1">1</span> <span class="font-weight-bold">Tesla
+        3:</span> 170
+        stk</p>
+    <p class="mb-3"><span class="bg-secondary text-white p-2 mr-1">2</span> <span
+            class="font-weight-bold">BMW i3:</span>
+        164 stk</p>
+    <p class="mb-3"><span class="bg-secondary text-white p-2 mr-1">2</span> <span class="font-weight-bold">Audi
+        e-tron:</span> 115 stk</p>
+    <p class="mb-3"><span class="bg-secondary text-white p-2 mr-1">3</span> <span
+            class="font-weight-bold">VW ID3:</span>
+        90 stk</p>
+    <p class="mb-3"><span class="bg-secondary text-white p-2 mr-1">4</span> <span class="font-weight-bold">Kia
+        e-Niro:</span> 85 stk</p>
+
+    <a class="btn btn-secondary my-4 pt-2 text-uppercase" href="https://www.bilbasen.dk/" target="_blank" role="button">Find mange
+        flere
+        elbiler på
+        Bilbasen</a>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+
+        $('.navbar-nav .nav-link').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    });
+</script>
+
+</body>
+</html>
