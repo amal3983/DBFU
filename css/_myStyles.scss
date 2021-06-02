@@ -63,25 +63,19 @@ img {
 	transition: all 0.3s ease;
 }
 
-.on-white-bg-border {
+.on-white-bg-border, .on-light-bg-border {
+	background-color: rgba(102,102,102,0.25);
+	clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
 	margin-top: 5px;
+	height: 13px;
 	width: 150px;
-	border-top: 10px solid rgba(102,102,102,0.20);
-	border-right: 10px solid white;
 }
-
-.on-light-bg-border {
-	margin-top: 5px;
-	width: 150px;
-	border-top: 10px solid rgba(102,102,102,0.20);
-	border-right: 10px solid #f6f6f6;
-}
-
 .on-dark-bg-border {
+	background-color: rgba(255, 255, 255, 0.25);
+	clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
 	margin-top: 5px;
+	height: 13px;
 	width: 150px;
-	border-top: 10px solid rgba(255, 255, 255, 0.25);
-	border-right: 10px solid white;
 }
 
 hr {
