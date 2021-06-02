@@ -364,6 +364,15 @@ width: 100%;
 	background-color: black;
 }
 
+.kontakt-input[type=text], #kontakt .form-row textarea {
+	background-color:#1a1a1a !important;
+}
+
+.kontakt-input::placeholder {
+	color: rgba(246,246,246,0.3) !important;
+	font-size: 14px;
+}
+
 .fordele-ved-medlemskab_bg{
 	z-index: 1;
 	padding: 25px;
