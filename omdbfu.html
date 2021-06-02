@@ -1,0 +1,341 @@
+<!-- 
+
+TIPS
+
+---- BOOTSTRAP ----
+
+- Aldrig giv "row" en baggrundsfarve, lav en div udenom row.
+
+- Aldrig giv "col-x" en baggrundsfarve, lav en ny div indeni col.
+
+
+HUSK
+
+CTRL + ALT + L
+Sætter kode op pænt automatisk!
+ 
+-->
+
+
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- Font Awesome link -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!-- PRIVATE | MEDLEMMER -->
+<div class="top text-center">
+    <a href="#" class="text-primary text-decoration-none transition condensed font-weight-bold">FOR PRIVATE</a> <span
+        class="v-line"></span> <a
+        href="#" class="link-for-medlemmer condensed transition font-weight-bold">FOR MEDLEMMER</a>
+
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white text-dark border-light border-top border-bottom">
+    <div class="container">
+        <a class="navbar-brand mr-5" href="index.html"><img class="logo-size" src="img/dbfu-logo.png" alt="DBFU Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-0 pt-3 pt-lg-0">
+                <li class="nav-item dropdown mr-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vi tilbyder
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item py-3" href="brugtbilsgaranti.html">Brugtbilgarantifond</a>
+                        <a class="dropdown-item py-3" href="kilometergaranti.html">Kilometergaranti</a>
+                        <a class="dropdown-item py-3" href="reklamationsret.html">Reklamationsret</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="brugtbilsguide.html">Brugtbilsguide</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link active" href="nyheder.html">Nyheder</a>
+                </li>
+                <li class="nav-item pb-2 pb-lg-0">
+                    <a class="nav-link" href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav border-top-nav pt-2 pt-lg-0 ml-0">
+                <li class="nav-item">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-field-menu"
+                               aria-label="Søg" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary nav-btn-soeg" type="button">Søg &nbsp; <i
+                                    class="fas fa-lg fa-search"></i></button>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="v-line mr-3 ml-2 d-none d-lg-block"></li>
+                <li class="mt-3 mt-lg-0">
+                    <a class="btn btn-primary nav-btn" href="forhandlere.html" role="button">Find en forhandler</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR SLUT -->
+
+
+<!-- BREADCRUMB -->
+<div class="bg-secondary text-white text-center breadcrumb-nav py-3">
+    <a class="breadcrumb-inactive link-white transition" href="index.html"><i class="fas fa-home fa-lg mr-3"></i></a>
+    <i class="fas fa-chevron-right breadcrumb-inactive fa-sm mr-3"></i>
+    <span class="font-weight-bold">OM DBFU</span>
+    </div>
+
+<header class="omdbfu_bg p-5">
+
+    <div class="skraa width-pc text-center p-2 p-md-5">
+
+        <h1>OM DBFU</h1>
+
+    </div>
+
+</header>
+<section class="container">
+    <div class="mt-5 pt-5">
+        <h2 class="text-uppercase h1 text-primary">LEDELSEN AF DBFU</h2>
+        <div class="on-light-bg-border"></div>
+
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-12 col-md-4 p-3 p-lg-5">
+            <img src="img/omdbfu/joergenbomberg.jpg" alt="Jørgen Bomberg">
+            <h4 class="mt-3 text-primary">Jørgen Bomberg</h4>
+            <p>Direktør</p>
+        </div>
+
+        <div class="col-12 col-md-4 p-3 p-lg-5">
+            <img src="img/omdbfu/karl-ovepedersen.jpg" alt="Karl-Ove Pedersen">
+            <h4 class="mt-3 text-primary">Karl-Ove Pedersen</h4>
+            <p>Seniorkonsulent</p>
+        </div>
+
+        <div class="col-12 col-md-4 p-3 p-lg-5">
+            <img src="img/omdbfu/jepperuby.jpg" alt="Jeppe Ruby">
+            <h4 class="mt-3 text-primary">Jeppe Ruby</h4>
+            <p>Medlemsformand</p>
+            <i>Bilhuset Laursen i Køge</i>
+
+        </div>
+
+    </div>
+    <div class="row mt-md-3">
+        <div class="col-12 col-md-4 p-3 p-lg-5">
+            <img src="img/omdbfu/mortenolsen.jpg" alt="Morten Olsen">
+            <h4 class="mt-3 text-primary">Morten Olsen</h4>
+            <p>Medlemsformand</p>
+            <i>Fyns Bilsalg i Bogense</i>
+        </div>
+
+        <div class="col-12 col-md-4 p-3 p-lg-5">
+            <img src="img/omdbfu/andershansen.jpg" alt="Anders Hansen">
+            <h4 class="mt-3 text-primary">Anders Hansen</h4>
+            <p>Bestyrelsesmedlem</p>
+            <i>Anders Hansen Automobiler i Esbjerg</i>
+        </div>
+
+        <div class="col-12 col-md-4 p-3 p-lg-5">
+            <img src="img/omdbfu/roberthansen.jpg" alt="Robert Hansen">
+            <h4 class="mt-3 text-primary">Robert Hansen</h4>
+            <p>Bestyrelsesmedlem</p>
+            <i>Jørgen Mølgaard A/S i Ringsted</i>
+
+        </div>
+
+    </div>
+    <div class="row mt-md-3">
+        <div class="col-12 col-md-4 p-3 p-lg-5">
+            <img src="img/omdbfu/andershansen.jpg" alt="Anders Hansen">
+            <h4 class="mt-3 text-primary">Anders Hansen</h4>
+            <p>Bestyrelsesmedlem</p>
+            <i>Anders Hansen Automobiler i Esbjerg</i>
+        </div>
+
+        <div class="col-12 col-md-4 p-3 p-lg-5">
+            <img src="img/omdbfu/kimcrone.jpg" alt="Kim Crone Staats">
+            <h4 class="mt-3 text-primary">Kim Crone Staats</h4>
+            <p>Bestyrelsesmedlem</p>
+            <i>Crone|Voss Autotrading & Leasing i Odense</i>
+        </div>
+
+        <div class="col-12 col-md-4 p-3 p-lg-5">
+            <img src="img/omdbfu/flemminghenriksen.jpg" alt="Flemming Thingmand Henriksen">
+            <h4 class="mt-3 text-primary">Flemming Thingmand Henriksen</h4>
+            <p>Bestyrelsesmedlem</p>
+            <i>Gørløse Autoimport i Gørløse</i>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="bg-light py-5">
+    <div class="container width-pc">
+
+        <div class="mt-5 pt-3">
+            <h2 class="text-uppercase h1 text-primary">VISION, MISSION OG VÆRDIER</h2>
+            <div class="on-light-bg-border mb-5"></div>
+        </div>
+
+        <h3 class="text-primary pb-2">Vision</h3>
+        <p class="mb-3">
+        DBFUs vision er at øge forbrugernes tillid til brugtvognsforhandlere samt skabe bedre vilkår for køb og salg af
+        brugte biler i Danmark.
+        </p>
+        <h3 class="text-primary pb-2 pt-3">Mission</h3>
+        <p class="mb-3">
+        Vi sørger for at være behjælpelig for både forbruger og forhandler. DBFU vejleder og informerer forbrugere og
+        forhandlere om de gældende regler for at købe og sælge biler i Danmark, hvilket afstemmer deres forventninger
+        til hinanden.
+        </p>
+
+        <p class="mb-3">
+        Vi stiller desuden en sikkerhed for forbrugerne, så de kan have tillid til brugtvognsforhandlere i Danmark, som
+        er medlem af DBFU.
+        </p>
+
+        <p class="mb-3">
+        Vi er aktive i den politiske debat for at skabe bedre vilkår for danske brugtvognsforhandlere.
+        </p>
+
+
+        <h3 class="text-primary pb-2 pt-3">Værdier</h3>
+        <p class="mb-3">
+        DBFU har 3 grundlæggende værdier, hvilke er byggestenene i vores forening.
+        </p>
+
+        <h5 class="mb-2 pt-3 text-secondary"><span class="bg-secondary text-white px-2 py-1 mr-2">1</span>
+            Troværdig
+        </h5>
+        <p class="mb-3">
+        Vi vægter troværdighed højt. Vores medlemmer følger vores etiske og moralske holdninger, hvilket skaber tryghed
+        for forbrugerne. Et medlemskab af DBFU er således forbrugernes garanti for en troværdig handel.
+        </p>
+
+        <h5 class="mb-2 pt-3 text-secondary"><span class="bg-secondary text-white px-2 py-1 mr-2">2</span>
+            Nærværende</h5>
+        <p class="mb-3">
+        Vi er en mindre forening, som sætter stor pris på gode relationer. Vi lytter, hjælper og er til stede for hver
+        enkelt medlem, når der er brug for det, ligesom en forbruger altid er velkommen til at kontakte foreningen for
+        gode råd og vejledning.
+        </p>
+
+        <h5 class="mb-2 pt-3 text-secondary"><span class="bg-secondary text-white px-2 py-1 mr-2">3</span>
+            Kompetent</h5>
+        <p class="mb-3  pb-4">
+        Vi er opdateret med de seneste love og krav for køb og salg af brugte biler i Danmark. DBFU stræber efter at
+        være en kompetent rådgiver, som kan vejlede både forbrugere og forhandlere og skabe en god oplevelse for begge
+        parter.
+        </p>
+
+
+    </div>
+</section>
+
+
+<section class="container width-pc py-5">
+
+    <div class="mt-5 pt-3">
+        <h2 class="text-uppercase h1 text-primary">VORES HISTORIE</h2>
+        <div class="on-light-bg-border mb-5"></div>
+    </div>
+
+    <h3 class="text-primary pb-2">Grundlæggelse</h3>
+    <p class="mb-3">
+    Dansk Bilforhandler Union, DBFU, blev grundlagt i 1996.
+    </p>
+    <p class="mb-3">
+    Foreningen blev dannet af brugtvognsforhandlere, som havde et fælles ønske om at øge forbrugernes tillid til
+    forhandlere af brugte biler i Danmark. Det skulle være trygt at købe en brugt bil i Danmark. Ønsket blev
+    startskuddet for DBFU, hvis formål var at skabe bedre vilkår for både forbruger og forhandler.
+    </p>
+    <p class="mb-3">
+    Allerede fra foreningens begyndelse blev der stillet store krav til DBFUs medlemmer. Det var kun troværdige,
+    kompetente og professionelle brugtvognsforhandlere, som kunne blive medlem af vores forening. Et medlemskab i DBFU
+    fungerede således som køberens garanti for en sikker handel, og det gør det stadig i dag, da vi fortsat stiller de
+    samme høje krav til vores medlemmer.
+    </p>
+
+    <h3 class="text-primary pb-2 pt-3">Dbfu vokser</h3>
+    <p class="mb-3">
+    DBFU er nået langt siden foreningens begyndelse i 1996. Trods et konkurrencepræget marked bliver flere
+    brugtvognsforhandlere fortsat medlem af vores brancheforening. Det er vi rigtig stolte af. Samtidig har vi i
+    fællesskab med vores medlemmer udviklet en BrugtBilGarantiFond, som er en sikkerhed for forbrugerne. Hvis en
+    forhandler ikke kan opfylde sine forpligtelser over for en kunde, vil DBFU gå ind og overtage den pågældende
+    forpligtelse.
+    </p>
+    <h3 class="text-primary pb-2 pt-3">Vi skaber bedre vilkår for køber og sælger</h3>
+    <p class="mb-3">
+    DBFUs vigtigste opgave er at bygge bro mellem forbruger og forhandler. Vi hjælper forbrugerne ved at fortælle om
+    deres rettigheder som køber, så de har realistiske forventninger til deres køb. Således er vi også med til at
+    afstemme køberens forventninger til det købte køretøj.
+    </p>
+    <p class="mb-3 pb-3">
+    Vi informerer og vejleder også brugtvognsforhandlere om købeloven og den øvrige lovgivning, så vores medlemmer kan
+    leve op til de krav, der stilles til at forhandle brugte biler i Danmark. DBFU har desuden en række etiske og
+    moralske holdninger, som vores medlemmer har udtrykt enighed i, hvilket øger troværdigheden til
+    brugtvognsforhandlere, som er medlem af vores forening. Således bringer vi køber og sælger tættere på hinanden og
+    sikrer at begge parter laver en god og ordentlig handel.
+    </p>
+
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+
+        $('.navbar-nav .nav-link').click(function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+    });
+</script>
+
+</body>
+</html>
