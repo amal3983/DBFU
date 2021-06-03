@@ -383,6 +383,15 @@ width: 100%;
 	background-repeat: no-repeat;
 }
 
+.blivmedlem input {
+	font-size:14px;
+}
+
+.blivmedlem .form-control {
+	background-clip: border-box !important;
+	border-color: #e9ecef;
+}
+
 .login1_img {
 	background-image: url("../img/logind.jpg");
 	background-size: cover;
