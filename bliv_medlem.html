@@ -117,82 +117,225 @@ Sætter kode op pænt automatisk!
 <!-- NAVBAR SLUT -->
 
 
-<!-- BREADCRUMB -->
-<div class="bg-secondary text-white text-center breadcrumb-nav py-3">
-    <a class="breadcrumb-inactive link-white transition" href="index.html"><i class="fas fa-home fa-lg mr-3"></i></a>
-    <i class="fas fa-chevron-right breadcrumb-inactive fa-sm mr-3"></i>
-    <span class="font-weight-bold">FOR MEDLEMMER</span>
-</div>
-
-
 <!-- HEADER -->
 <header class="">
 
 </header>
 
-
-
-
-
-
-<!-- Bliv Medlem -->
-<section class="bg-light py-5 px-3 px-md-0">
-
+<section class="login1_img py-5 px-3 mb-md-0">
     <div class="container py-3">
         <div class="row">
 
-            <!-- Medlem Sektionen -->
-            <div class="col-3 col-md-5 align-self-center" id="blivmedlem">
-                <h2 class="h1 text-primary">FOR MEDLEMMER</h2>
-                <div class="on-light-bg-border mb-4"></div>
-                <p class="mb-4">Ansøg om at få registreret din virksomhed som<br> medlem hos DBFU og vi vender tilbage til dig via e-mail.</p>
-
-                <!-- Bliv Medlem Form -->
-                <div class="row">
-
-                    <div class="form-row col-6">
-                        <h5 class="text-secondary col-12 my-3 pt-32 pb-1">BLIV MEDLEM</h5>
-                        <div class="col-12 mb-2">
-                            <label for="reg_email" class="d-none">EMAIL</label>
-                            <input type="text" id="reg_email" class="form-control mb-2 border-1" placeholder="E-MAIL">
-                        </div>
-                        <div class="container col-12 mt-2">
-                            <a class="btn btn-outline-secondary mb-4" href="#" role="button">ANSØG MEDLEMSKAB <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Login Form -->
-
-                <div class="row">
-
-                    <div class="form-row col-6">
-                        <h5 class="text-secondary col-12 my-3 pt-32 pb-1">LOGIN</h5>
-                        <div class="col-12 mb-2">
-                            <label for="brug_navn" class="d-none">BRUGERNAVN</label>
-                            <input type="text" id="brug_navn" class="form-control mb-2 border-1" placeholder="BRUGERNAVN">
-                        </div>
-                        <div class="col-12 mb-2">
-                            <label for="kodeord" class="d-none">KODEORD</label>
-                            <input type="password" id="kodeord" class="form-control mb-2 border-1" placeholder="KODEORD">
-                        </div>
-                        <div class="container col-12 mt-2">
-                            <a class="btn btn-outline-secondary mb-4" href="#" role="button">LOGIN <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
+            <!-- Billede -->
+            <div class="col-12 col-md-7 mb-5 mb-md-0">
+                <img src="img/logind2.png" alt="Login billede på venstre side">
             </div>
 
-            <!-- Billede -->
-            <div class="col-7 mb-5 mb-md-0">
-                <img src="img/jobannonce.png" alt="Billede for job">
+            <!-- Login overskrift -->
+            <div class="col-12 col-md-5 align-self-center" id="login">@
+                <h2 class="h1 text-white">Log ind</h2>
+                <div class="on-dark-bg-border mb-4"></div>
+
+                <!-- Login Form -->
+                <div class="row">
+                    <div class="form-row col-12">
+
+                        <!-- Brugernavn Input -->
+                        <div class="input-group col-12 mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user icon"></i></span>
+                            <label for="brug_navn" class="d-none">BRUGERNAVN</label>
+                            <input type="text" id="brug_navn" class="form-control border-1" placeholder="BRUGERNAVN">
+                        </div>
+
+                        <!-- Password Input -->
+                        <div class="input-group col-12 mb-3">
+                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-lock"></i></span>
+                            <label for="kodeord" class="d-none">KODEORD</label>
+                            <input type="password" id="kodeord" class="form-control border-1" placeholder="KODEORD">
+                        </div>
+
+                        <!-- Glemt kodeord -->
+                        <div class="col-12">
+                            <a href="#" style="color: white">Glemt dit kodeord?</a>
+                        </div>
+
+
+                        <!-- Login / Bliv Medlem Knapper-->
+                        <div class="col-5 mt-4 ">
+                            <a class="btn btn-light text-secondary btn-block" href="#" role="button">LOGIN</a>
+                        </div>
+
+                        <div class="col-5 mt-4">
+                            <a class="btn btn-outline-light btn-block" href="#" role="button">BLIV MEDLEM</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- KONTAKT OPLYSNINGER START -->
+<footer class="bg-dark text-light">
+    <br><br>
+    <div class="container text-center text-md-center  px-2 px-md-3 px-lg-4 pb-4 py-5">
+        <div class="row align-items-start justify-content-between">
+
+            <div class="col-12 col-md-4 mt-3 mt-md-0 row text-left">
+                <!-- Følg os Sektion -->
+                <h3 class="col-12 mb-4">FØLG OS</h3>
+                <div class="col-2 col-md-2 mb-4 text-left">
+                    <a class="text-decoration-none text-light" href="#"> <i class="fab transition fa-facebook-square fa-3x mr-1"></i></a>
+                </div>
+                <div class="col-2 col-md-2 mb-4 text-left">
+                    <a class="text-decoration-none text-light" href="#"> <i class="fab transition fa-linkedin fa-3x mr-1"></i></a>
+                </div>
+                <div class="col-2 col-md-2 text-left">
+                    <a class="text-decoration-none text-light" href="#"> <i class="some transition fab fa-instagram fa-3x mr-1"></i></a>
+                </div>
+                <div class="col-2 col-md-2 text-left">
+                    <a class="text-decoration-none text-light" href="#"> <i class="some transition fab fa-youtube fa-3x"></i></a>
+                </div>
+
+                <!-- Links Sektion -->
+                <h3 class="col-12 mt-3 mt-md-3 mb-3">LINKS</h3>
+                <div class="col-12">
+                    <p class="mb-2">
+                        <a class="text-decoration-none text-light" href="omdbfu.html">
+                            <i class="fas fa-angle-right"></i> &nbsp; OM DBFU</a>
+                    </p>
+
+                    <p class="mb-2">
+                        <a class="text-decoration-none text-light" href="presse.html">
+                            <i class="fas fa-angle-right"></i> &nbsp; PRESSE</a>
+                    </p>
+
+                    <p class="mb-3">
+                        <a class="text-decoration-none text-light" href="job.html">
+                            <i class="fas fa-angle-right"></i> &nbsp; JOB HOS DBFU</a>
+                    </p>
+                </div>
+
+
+                <div class="col-12 mb-3 mt-3">
+                    <h5 class="mb-3">KLAGER</h5>
+
+                    <p>I forbindelse med klager<br>eller lignende, henvises der til <br>ankenævnet for biler.</p><br>
+
+                    <a class="btn btn-outline-light" href="#" role="button">BILKLAGER.DK</a>
+
+
+
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mt-5 mt-md-0 row text-left">
+                <!-- Informationer & Oplysninger-->
+                <h3 class="col-12 mb-4">INFORMATIONER</h3>
+
+                <h5 class="col-12 mb-3">ADRESSE</h5>
+                <div class="col-12">
+                    <p class="mb-2">DANSK BILFORHANDLER UNION</p>
+
+                    <p class="mb-2">FULBYVEJ 15</p>
+
+                    <p class="mb-3">4180 SORØ</p>
+                </div>
+
+
+
+                <h5 class="col-12 mb-3 mt-4">OPLYSNINGER</h5>
+
+                <div class="col-12 mb-3">
+
+                    <div class="row align-items-center">
+                        <i class="fas fa-phone-alt fa-lg col-1"></i>
+                        <span class="col ml-2">77 77 40 00</span>
+                    </div>
+
+
+                </div>
+
+                <div class="col-12 mb-3">
+
+                    <div class="row align-items-center">
+                        <i class="fas fa-envelope fa-lg col-1"></i>
+                        <span class="col ml-2">info@dbfu.dk</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-12 col-md-4 text-left mt-4 mt-md-0" id="kontakt">
+                <!-- Kontakt formular -->
+                <h3 class="mb-4">KONTAKT</h3>
+                <p>
+                    Hvis du har spørgsmål eller er i tvivl om noget, så skriv endelig en mail til os via denne
+                    kontaktformular. Vi ser helst, at du kontakter os via mail først, før du ringer.
+                </p> <br>
+                <div class="form-row">
+                    <div class="col-12 col-md-6 mb-2">
+                        <label for="navn" class="d-none">FORNAVN</label>
+                        <input type="text" id="navn" class="form-control kontakt-input mb-2 border-1"
+                               placeholder="FORNAVN">
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                        <label for="efternavn" class="d-none">EFTERNAVN</label>
+                        <input type="text" id="efternavn" class="form-control kontakt-input mb-2 border-1"
+                               placeholder="EFTERNAVN">
+                    </div>
+                    <div class="col-12 mb-2">
+                        <label for="email" class="d-none">EMAIL</label>
+                        <input type="text" id="email" class="form-control kontakt-input mb-2 border-1"
+                               placeholder="E-MAIL">
+                    </div>
+                    <div class="col-12 mb-2">
+                        <label for="emne" class="d-none">emne</label>
+                        <input type="text" id="emne" class="form-control kontakt-input mb-2 border-1"
+                               placeholder="EMNE">
+                    </div>
+                    <div class="col-12 mb-2 mb-2">
+                        <label for="besked" class="d-none">emne</label>
+                        <textarea id="besked" class="form-control kontakt-input border-1" rows="8"
+                                  placeholder="BESKED"></textarea>
+                    </div>
+                    <div class="container col-12 mt-2">
+                        <a class="btn btn-outline-light mb-4 px-5" href="#" role="button">SEND</a>
+                    </div>
+
+                </div>
             </div>
 
         </div>
     </div>
-</section>
+
+    <!-- KONTAKT OPLYSNINGER SLUT -->
+
+    <!-- FOOTER START -->
+
+    <div class="col-12 footer_bg text-center text-light text-md-left py-4">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-12 col-md-6">
+                    <i class="fas fa-copyright mb-2 mb-md-0"></i> DANSK BILFORHANDLER UNION 2021
+                    <span class="px-2 xbold d-none d-md-inline">|</span><br class="d-block d-md-none">
+                    CVR: 19317439
+                </div>
+
+                <div class="col-12 col-md-6 text-center text-md-right mt-2 mt-md-0">
+                    <a class="text-decoration-none text-light" href="#">PRIVATPOLITIK</a>
+                    <span class="font-weight-bold px-3">|</span>
+                    <a class="text-decoration-none text-light" href="#">COOKIES</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
