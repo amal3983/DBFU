@@ -8,7 +8,7 @@ $xlcomputer: "screen and (min-width: 1800px)";
 
 @media #{$computer} {
 
-  h1 {
+  h1, .h1_forside {
     font-size:60px;
   }
 
@@ -69,7 +69,7 @@ $xlcomputer: "screen and (min-width: 1800px)";
   .bil {
     height: 100%;
     width: 1300px;
-    background-position: 50px bottom right;
+    background-position: 50px bottom;
     margin-left: -250px;
   }
 
